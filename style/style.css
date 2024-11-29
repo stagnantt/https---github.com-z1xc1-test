@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #0f1849;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.box{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn{
+    height: 35px;
+    background: #219ebc;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;    
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.btn:hover{
+    background-color: #118320;
+    opacity: 0.82;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.nav{
+    background: #fb8500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+    padding-left: 30px;
+}
+.nav1 {
+    background: #fb8500;
+    padding-left: 20px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border:1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
+.message2{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 5px;
+    border:1px solid #699053;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    color: red;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #fb8500;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    max-height: 200px; /* adjust this value to fit your content */
+}
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  
+  .dropbtn {
+    height: 35px;
+    background: #219ebc;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;  
+  }
+  
+  .dropbtn:hover {
+    background-color: #3e8e41;
+  }
+  .dropcont {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  .nav .logo img {
+    width: 150px;   
+    height: auto; 
+}
+.nav1 .logo img {
+    width: 150px;   
+    height: auto; 
+}
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    height: 100vh;
+    width: 50px;
+    background-color: #337ab7;
+    color: #fff;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+.side-panel-header {
+    height: 50px;
+    background-color: #337ab7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.side-panel-content {
+    padding: 10px;
+}
+
+.side-panel-hover {
+    margin-left: 250px;
+    transition: margin 0.3s ease;
+}
+.side-panel:hover .side-panel-content {
+    display: block;
+}
+.main-content {
+    margin-left: 50px;
+    transition: all 0.5s ease;
+}
+
+.main-content.side-panel-hover {
+    margin-left: 250px;
+}
+
+.content{
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+        .module-link {
+            color: white;
+            background-color: transparent;
+            border: none;
+            padding: 60px;
+            font-size: 16px;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .module-link:hover {
+            background-color: transparent;
+        }
+.side-panel:hover .module-link{
+    opacity: 1;
+}
+.module:hover {
+    background-color: #f0f0f0;
+}
+
+.module a {
+    text-decoration: none;
+    color: #333;
+}
+
+.module a:hover {
+    color: #337ab7;
+}
+.module-1 {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.side-panel .module-1 p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.side-panel:hover .module-1 p {
+    opacity: 1;
+}
+.side-panel:hover .module-2 a, .side-panel:hover .module-3 a, .side-panel:hover .module-4 a {
+    opacity: 1;
+}
+
+.side-panel:hover {
+    width: 300px;
+}
+.side-panel-content a {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.side-panel:hover .side-panel-content a {
+    opacity: 1;
+}
+.side-panel .email {
+    opacity: 0;
+}
+
+.side-panel:hover .email {
+    opacity: 1;
+}
+.side-panel .module-1:hover {
+    background-color: inherit;
+  }
+  
